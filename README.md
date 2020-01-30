@@ -9,6 +9,8 @@
 ## Search: accurate, also inside words (default)
 
 ```
+let titles = ['Joker', 'Marriage Story', 'The Irishman']
+
 //Initialize search
 let accurateSearch = new AccurateSearch()
 
@@ -27,6 +29,8 @@ for (let id of foundIds) console.log(titles[id])
 ## Search: accurate, not inside words
 
 ```
+let titles = ['Joker', 'Marriage Story', 'The Irishman']
+
 //Initialize search
 accurateSearch = new AccurateSearch({
 	insideWords: false
@@ -47,6 +51,8 @@ for (let id of foundIds) console.log(titles[id])
 ## Search: speed, also inside words
 
 ```
+let titles = ['Joker', 'Marriage Story', 'The Irishman']
+
 //Initialize search
 accurateSearch = new AccurateSearch({
 	engine: 'speed'
@@ -67,6 +73,8 @@ for (let id of foundIds) console.log(titles[id])
 ## Search: speed, not inside words
 
 ```
+let titles = ['Joker', 'Marriage Story', 'The Irishman']
+
 //Initialize search
 accurateSearch = new AccurateSearch({
 	engine: 'speed',
