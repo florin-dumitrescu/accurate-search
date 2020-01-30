@@ -1,14 +1,20 @@
 # Accurate Search
 
+The most accurate text search engine and still faster than most of the other search libraries.
 
-### The most accurate text search engine and still faster than most of the other search libraries.
+# How to install
 
+```
+npm i accurate-search
+```
 
-# How to use it
+# How to use
 
 ## Search: accurate, also inside words (default)
 
 ```
+const AccurateSearch = require('accurate-search')
+
 let titles = ['Joker', 'Marriage Story', 'The Irishman']
 
 //Initialize search
@@ -29,6 +35,8 @@ for (let id of foundIds) console.log(titles[id])
 ## Search: accurate, not inside words
 
 ```
+const AccurateSearch = require('accurate-search')
+
 let titles = ['Joker', 'Marriage Story', 'The Irishman']
 
 //Initialize search
@@ -51,6 +59,8 @@ for (let id of foundIds) console.log(titles[id])
 ## Search: speed, also inside words
 
 ```
+const AccurateSearch = require('accurate-search')
+
 let titles = ['Joker', 'Marriage Story', 'The Irishman']
 
 //Initialize search
@@ -73,6 +83,8 @@ for (let id of foundIds) console.log(titles[id])
 ## Search: speed, not inside words
 
 ```
+const AccurateSearch = require('accurate-search')
+
 let titles = ['Joker', 'Marriage Story', 'The Irishman']
 
 //Initialize search
