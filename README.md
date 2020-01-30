@@ -66,6 +66,7 @@ for (let id of foundIds) console.log(titles[id])
 
 ## Search: speed, not inside words
 
+```
 //Initialize search
 accurateSearch = new AccurateSearch({
 	engine: 'speed',
@@ -82,3 +83,4 @@ foundIds = accurateSearch.search('a')
 
 //Show results
 for (let id of foundIds) console.log(titles[id])
+```
