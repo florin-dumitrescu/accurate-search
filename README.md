@@ -1,4 +1,4 @@
-# Accurate Search
+# accurate-search
 
 The most accurate text search engine and still faster than most of the other search libraries.
 
