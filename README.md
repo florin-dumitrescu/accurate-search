@@ -1,6 +1,6 @@
 # accurate-search
 
-The most accurate text search engine and still faster than most of the other search libraries.
+The most accurate text search engine and faster than most of the other search libraries. No dependencies on other libraries or APIs, so it works offline too.
 
 # How to install
 
