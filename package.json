@@ -9,7 +9,7 @@
 		"url": "git+https://github.com/florind9/accurate-search.git"
 	},
 	"keywords": [
-		"search"
+		"search", "text search"
 	],
 	"author": "Florin Mirel Dumitrescu",
 	"license": "ISC",
