@@ -42,7 +42,7 @@ let foundIds = accurateSearch.search('a')
 for (let id of foundIds) console.log(movies[id])
 ```
 
-## Search with scoring
+## Search items with rating
 
 ```
 const AccurateSearch = require('accurate-search')
