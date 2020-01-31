@@ -1,6 +1,6 @@
 {
 	"name": "accurate-search",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "The most accurate text search engine and faster than most of the other search libraries.",
 	"main": "index.min.js",
 	"scripts": {},
@@ -9,7 +9,8 @@
 		"url": "git+https://github.com/florind9/accurate-search.git"
 	},
 	"keywords": [
-		"search", "text search"
+		"search",
+		"text search"
 	],
 	"author": "Florin Mirel Dumitrescu",
 	"license": "ISC",
