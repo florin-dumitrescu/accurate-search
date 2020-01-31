@@ -1,6 +1,6 @@
 # accurate-search
 
-The most accurate text search engine and faster than most of the other search libraries. No dependencies on other libraries or APIs. Works offline too.
+The most accurate text search engine and faster than most of the other search libraries. No dependencies on other libraries or APIs, so it works offline too. Offers search suggestions and scoring based on the items ratings.
 
 Features:
 - text search with options:
