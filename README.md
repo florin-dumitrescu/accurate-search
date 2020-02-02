@@ -8,7 +8,7 @@ Features:
     - accurate - the most accurate search, faster than most of the other search libraries; takes ratings into consideration
 	- speed - fastest search, good results; ignores ratings
   - search inside words: true / false
-  - if an item have **rating**, it will influence the scoring
+  - if an item have rating, it will influence the scoring
 - **ratings** (optional)
   - The accurate search engine will also take into consideration the ratings if they are defined (bigger rating is better)
 - **search suggestions**
