@@ -3,11 +3,15 @@
 The most accurate text search engine and faster than most of the other search libraries. No dependencies on other libraries or APIs, so it works offline too. Offers search suggestions and scoring based on the items ratings.
 
 Features:
-- text search with options:
-  - engine: accurate / speed
+- **text search** with options:
+  - engine: 
+    - accurate - the most accurate search, faster than most of the other search libraries; takes ratings into consideration
+	- speed - fastest search, good results; ignores ratings
   - search inside words: true / false
-  - if an item have rating, it will influence the scoring
-- search suggestions
+  - if an item have **rating**, it will influence the scoring
+- **ratings** (optional)
+  - The accurate search engine will also take into consideration the ratings if they are defined (bigger rating is better)
+- **search suggestions**
   - suggest full words starting with the letters entered by the user
 - realtime indexing of the content
   - content will stay indexed after adding or removing items
@@ -42,13 +46,13 @@ let foundIds = accurateSearch.search('a')
 for (let id of foundIds) console.log(movies[id])
 ```
 
-## Search items with rating
+## Search items with ratings
 
 ```
 const AccurateSearch = require('accurate-search')
 
-let movies = ['Joker', 'Marriage Story', 'The Irishman']
-let ratings = [8.6, 8.1, 8.0]
+let movies = ['The Irishman', 'Joker', 'Marriage Story']
+let ratings = [8.0, 8.6, 8.1]
 
 //Initialize search
 let accurateSearch = new AccurateSearch()
