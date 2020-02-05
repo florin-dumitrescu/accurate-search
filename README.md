@@ -16,11 +16,18 @@ Features:
 - realtime indexing of the content
   - content will stay indexed after adding or removing items
 
+
+# Benchmark
+
+A comparison with other javascript search libraries can be found on the Accurate Search website: [accuratesearch.org](http://accuratesearch.org)
+
+
 # How to install
 
 ```
 npm i accurate-search
 ```
+
 
 # How to use
 
