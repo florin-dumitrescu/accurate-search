@@ -1,6 +1,6 @@
 {
 	"name": "accurate-search",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "The most accurate text search engine and faster than most of the other search libraries.",
 	"main": "accuratesearch.min.js",
 	"scripts": {
