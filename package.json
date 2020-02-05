@@ -2,8 +2,10 @@
 	"name": "accurate-search",
 	"version": "1.0.4",
 	"description": "The most accurate text search engine and faster than most of the other search libraries.",
-	"main": "index.min.js",
-	"scripts": {},
+	"main": "accuratesearch.min.js",
+	"scripts": {
+		"test": "mocha"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/florind9/accurate-search.git"
@@ -17,5 +19,8 @@
 	"bugs": {
 		"url": "https://github.com/florind9/accurate-search/issues"
 	},
-	"homepage": "https://github.com/florind9/accurate-search#readme"
+	"homepage": "http://accuratesearch.org",
+	"dependencies": {
+		"mocha": "^7.0.1"
+	}
 }
