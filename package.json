@@ -20,7 +20,7 @@
 		"url": "https://github.com/florind9/accurate-search/issues"
 	},
 	"homepage": "http://accuratesearch.org",
-	"dependencies": {
+	"devDependencies": {
 		"mocha": "^7.0.1"
 	}
 }
