@@ -170,3 +170,35 @@ let suggestions = accurateSearch.suggestions('m', 5)
 //Show results
 for (let s of suggestions) console.log(s)
 ```
+
+
+## Remove entry from search index
+
+```
+const AccurateSearch = require('accurate-search')
+
+let movies = ['Joker', 'Marriage Story', 'The Irishman']
+
+//Initialize search
+let accurateSearch = new AccurateSearch()
+
+//Add data
+for (let i = 0; i < movies.length; i++) {
+	accurateSearch.addText(i, movies[i])
+}
+
+//Search
+let suggestions = accurateSearch.search('a')
+
+//Show results
+for (let s of suggestions) console.log(s)
+
+//Remove entry
+accurateSearch.remove(2)
+
+//Search again
+let suggestions = accurateSearch.search('a')
+
+//Show results
+for (let s of suggestions) console.log(s)
+```
