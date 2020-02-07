@@ -1,6 +1,6 @@
 # accurate-search
 
-Two engines in one library: the most accurate text search, still very fast and the fastest text search, still with very good results. You can easily switch the engines based on your needs. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
+2 engines in 1 library: the most **accurate text search**, still very fast, and the **fastest text search** with still very good results. Easy to switch the engines based on your needs. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
 
 Features:
 - **text search** with options:
