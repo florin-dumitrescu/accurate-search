@@ -13,7 +13,7 @@ Features:
   - the accurate search engine will also take into consideration the ratings if they are defined (bigger rating is better)
 - **search suggestions**
   - suggest full words starting with the letters entered by the user
-- realtime indexing of the content
+- **realtime indexing** of the content
   - content will stay indexed after adding or removing entries
 
 
