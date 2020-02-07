@@ -6,9 +6,9 @@ Features:
 - **text search** with options:
   - engine: 
     - accurate - the most accurate search, faster than most of the other search libraries
-		  - have the option to search matches inside words, not only at the beginning of the words
-      - takes ratings into consideration. If an item have rating, it will influence the scoring
-	  - speed - the fastest search, still very good results. Doesn't take ratings into consideration
+      - have the option to search matches inside words, not only at the beginning of the words
+      - takes ratings into consideration; if an item have rating, it will influence the scoring
+    - speed - the fastest search, still very good results; doesn't take ratings into consideration
 - **ratings** (optional)
   - the accurate search engine will also take into consideration the ratings if they are defined (bigger rating is better)
 - **search suggestions**
