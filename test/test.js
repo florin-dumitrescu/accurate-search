@@ -77,37 +77,12 @@ describe('Search: accurate, not inside words', function () {
 });
 
 
-describe('Search: speed, also inside words', function () {
+describe('Search: speed', function () {
 
 	describe('init', function () {
 		it('should return ok if search initialize successfully', function () {
 			accurateSearch = new AccurateSearch({
 				engine: 'speed'
-			})
-			for (let i = 0; i < movies.length; i++) {
-				accurateSearch.addText(i, movies[i])
-			}
-			assert.ok(accurateSearch)
-		});
-	});
-
-	describe('search', function () {
-		it('should return ok if at least one match is found', function () {
-			let foundIds = accurateSearch.search('a')
-			assert.ok(foundIds)
-		});
-	});
-
-});
-
-
-describe('Search: speed, not inside words', function () {
-
-	describe('init', function () {
-		it('should return ok if search initialize successfully', function () {
-			accurateSearch = new AccurateSearch({
-				engine: 'speed',
-				insideWords: false
 			})
 			for (let i = 0; i < movies.length; i++) {
 				accurateSearch.addText(i, movies[i])

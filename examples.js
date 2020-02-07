@@ -1,4 +1,4 @@
-const AccurateSearch = require('./AccurateSearch.js')
+const AccurateSearch = require('./accuratesearch.min.js')
 
 let movies = ['The Lighthouse', 'Marriage Story', 'The Irishman', 'Transit', 'A Hidden Life', 'Little Women',
 	'Uncut Gems', 'Under the Silver Lake', 'The Beach Bum', 'Gloria Bell', 'An Elephant Sitting Still',
@@ -58,30 +58,11 @@ console.log(Date.now() - t + ' ms')
 for (let id of foundIds) console.log(movies[id])
 
 
-console.log('\nSearch: speed, also inside words')
-
-//Initialize search
-accurateSearch = new AccurateSearch({
-	engine: 'speed'
-})
-//Add data
-for (let i = 0; i < movies.length; i++) {
-	accurateSearch.addText(i, movies[i])
-}
-//Search
-t = Date.now()
-foundIds = accurateSearch.search('a')
-console.log(Date.now() - t + ' ms')
-//Show results
-for (let id of foundIds) console.log(movies[id])
-
-
 console.log('\nSearch: speed, not inside words')
 
 //Initialize search
 accurateSearch = new AccurateSearch({
-	engine: 'speed',
-	insideWords: false
+	engine: 'speed'
 })
 //Add data
 for (let i = 0; i < movies.length; i++) {
