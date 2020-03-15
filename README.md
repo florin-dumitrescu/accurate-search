@@ -1,6 +1,6 @@
 # accurate-search
 
-2 engines in 1 library: the most **accurate text search**, still very fast, and the **fastest text search** with still very good results. Easy to switch the engines based on your needs. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
+2 engines in 1 library: the most **accurate text search**, very fast, and the **fastest text search** with accurate results. Easy to switch the engines based on your needs. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
 
 Features:
 - **text search** with options:
@@ -8,7 +8,7 @@ Features:
     - **accurate** - the most accurate search, faster than most of the other search libraries
       - have the option to search matches inside words, not only at the beginning of the words
       - takes ratings into consideration; if an item have rating, it will influence the scoring
-    - **speed** - the fastest search, still very good results; doesn't take ratings into consideration
+    - **speed** - the fastest search, accurate results; doesn't take ratings into consideration
 - **ratings** (optional)
   - the accurate search engine will also take into consideration the ratings if they are defined (bigger rating is better)
 - **search suggestions**
