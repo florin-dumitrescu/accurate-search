@@ -1,16 +1,13 @@
 # accurate-search
 
-2 engines in 1 library: the most **accurate text search**, very fast, and the **fastest text search** with accurate results. Easy to switch the engines based on your needs. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
+The **fastest** and **most accurate** text search. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
 
 Features:
-- **text search** with options:
-  - engine: 
-    - **accurate** - the most accurate search, faster than most of the other search libraries
-      - have the option to search matches inside words, not only at the beginning of the words
-      - takes ratings into consideration; if an item have rating, it will influence the scoring
-    - **speed** - the fastest search, accurate results; doesn't take ratings into consideration
+- **text search**:
+  - the **fastest** and **most accurate** text search
+  - takes ratings into consideration; if an item have rating, it will influence the scoring
 - **ratings** (optional)
-  - the accurate search engine will also take into consideration the ratings if they are defined (bigger rating is better)
+  - if an item have rating defined, this will influnce the scoring. The item's score will be multiplied with the rating value
 - **search suggestions**
   - suggest full words starting with the letters entered by the user
 - **realtime indexing** of the content
@@ -31,7 +28,7 @@ npm i accurate-search
 
 # How to use
 
-## Search: accurate, also inside words (default)
+## Search
 
 ```
 const AccurateSearch = require('accurate-search')
@@ -59,7 +56,7 @@ for (let id of foundIds) console.log(movies[id])
 const AccurateSearch = require('accurate-search')
 
 let movies = ['The Irishman', 'Joker', 'Marriage Story']
-let ratings = [8.0, 8.6, 8.1]
+let ratings = [1.1, 1.3, 1.9]
 
 //Initialize search
 let accurateSearch = new AccurateSearch()
@@ -67,54 +64,6 @@ let accurateSearch = new AccurateSearch()
 //Add data
 for (let i = 0; i < movies.length; i++) {
 	accurateSearch.addText(i, movies[i], ratings[i])
-}
-
-//Search
-let foundIds = accurateSearch.search('a')
-
-//Show results
-for (let id of foundIds) console.log(movies[id])
-```
-
-## Search: accurate, not inside words
-
-```
-const AccurateSearch = require('accurate-search')
-
-let movies = ['Joker', 'Marriage Story', 'The Irishman']
-
-//Initialize search
-let accurateSearch = new AccurateSearch({
-	insideWords: false
-})
-
-//Add data
-for (let i = 0; i < movies.length; i++) {
-	accurateSearch.addText(i, movies[i])
-}
-
-//Search
-let foundIds = accurateSearch.search('a')
-
-//Show results
-for (let id of foundIds) console.log(movies[id])
-```
-
-## Search: speed
-
-```
-const AccurateSearch = require('accurate-search')
-
-let movies = ['Joker', 'Marriage Story', 'The Irishman']
-
-//Initialize search
-let accurateSearch = new AccurateSearch({
-	engine: 'speed'
-})
-
-//Add data
-for (let i = 0; i < movies.length; i++) {
-	accurateSearch.addText(i, movies[i])
 }
 
 //Search
