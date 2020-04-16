@@ -4,10 +4,10 @@ let movies = ['The Lighthouse', 'Marriage Story', 'The Irishman', 'Transit', 'A 
 	'Uncut Gems', 'Under the Silver Lake', 'The Beach Bum', 'Gloria Bell', 'An Elephant Sitting Still',
 	'Portrait of a Lady on Fire', 'Apollo 11', 'The Souvenir', 'Pain and Glory', 'Parasite'
 ]
-let ratings = [8.6, 8.1, 8.0]
+let ratings = [1.1, 1.3, 1.9]
 
 
-console.log('\nSearch: accurate, also inside words (default)')
+console.log('\nSearch')
 
 //Initialize search
 let accurateSearch = new AccurateSearch()
@@ -36,42 +36,6 @@ for (let i = 0; i < movies.length; i++) {
 //Search
 foundIds = accurateSearch.search('e')
 
-//Show results
-for (let id of foundIds) console.log(movies[id])
-
-
-console.log('\nSearch: accurate, not inside words')
-
-//Initialize search
-accurateSearch = new AccurateSearch({
-	insideWords: false
-})
-//Add data
-for (let i = 0; i < movies.length; i++) {
-	accurateSearch.addText(i, movies[i])
-}
-//Search
-t = Date.now()
-foundIds = accurateSearch.search('a')
-console.log(Date.now() - t + ' ms')
-//Show results
-for (let id of foundIds) console.log(movies[id])
-
-
-console.log('\nSearch: speed, not inside words')
-
-//Initialize search
-accurateSearch = new AccurateSearch({
-	engine: 'speed'
-})
-//Add data
-for (let i = 0; i < movies.length; i++) {
-	accurateSearch.addText(i, movies[i])
-}
-//Search
-t = Date.now()
-foundIds = accurateSearch.search('a')
-console.log(Date.now() - t + ' ms')
 //Show results
 for (let id of foundIds) console.log(movies[id])
 
