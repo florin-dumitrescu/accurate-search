@@ -1,6 +1,6 @@
 # accurate-search
 
-The **fastest** and **most accurate** text search. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
+The **fastest** and **most accurate** text search. Setting ratings for entries will influence the scoring. Accurate search uses match distance algorithm which means words matched in the beginning of the text are better then those matched further in the text. No dependencies on other libraries or APIs, so it works offline too.
 
 Features:
 - **text search**:
@@ -17,6 +17,8 @@ Features:
 # Benchmark
 
 A comparison with other javascript search libraries can be found on the Accurate Search website: [accuratesearch.org](http://accuratesearch.org)
+
+[<img src="http://accuratesearch.org/search-comparison-benchmark.png">](http://accuratesearch.org)
 
 
 # How to install
