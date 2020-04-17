@@ -18,8 +18,6 @@ Features:
 
 A comparison with other javascript search libraries can be found on the Accurate Search website: [accuratesearch.org](http://accuratesearch.org)
 
-[<img src="http://accuratesearch.org/search-comparison-benchmark.png">](http://accuratesearch.org)
-
 
 # How to install
 
