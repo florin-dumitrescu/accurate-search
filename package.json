@@ -1,7 +1,7 @@
 {
 	"name": "accurate-search",
 	"version": "1.2.2",
-	"description": "2 engines in 1 library: the most accurate text search, very fast, and the fastest text search with accurate results. Easy to switch the engines based on your needs. Setting ratings for entries will influence the scoring.",
+	"description": "The fastest and most accurate javascript full-text search library. Accurate search uses match distance algorithm to return the accurate order of the matching items.",
 	"main": "accuratesearch.min.js",
 	"scripts": {
 		"test": "mocha"
