@@ -1,6 +1,8 @@
 # accurate-search
 
-The **fastest** and **most accurate** text search. Setting ratings for entries will influence the scoring. Accurate search uses match distance algorithm which means words matched in the beginning of the text are better then those matched further in the text. No dependencies on other libraries or APIs, so it works offline too.
+The **fastest** and **most accurate** Javascript full-text search library.
+
+Accurate search uses match distance algorithm which means words matched in the beginning of the text weight more than those matched further in the text. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
 
 Features:
 - **text search**:
