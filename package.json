@@ -12,7 +12,8 @@
 	},
 	"keywords": [
 		"search",
-		"text search"
+		"text search",
+		"full text search"
 	],
 	"author": "Florin Mirel Dumitrescu",
 	"license": "ISC",
