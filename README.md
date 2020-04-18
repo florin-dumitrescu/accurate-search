@@ -7,7 +7,7 @@ Features:
   - the **fastest** and **most accurate** text search
   - takes ratings into consideration; if an item have rating, it will influence the scoring
 - **ratings** (optional)
-  - if an item have rating defined, this will influnce the scoring. The item's score will be multiplied with the rating value
+  - if an item have rating defined, this will influence the scoring. The item's score will be multiplied with the rating value
 - **search suggestions**
   - suggest full words starting with the letters entered by the user
 - **realtime indexing** of the content
