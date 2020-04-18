@@ -4,7 +4,7 @@ let movies = ['The Lighthouse', 'Marriage Story', 'The Irishman', 'Transit', 'A 
 	'Uncut Gems', 'Under the Silver Lake', 'The Beach Bum', 'Gloria Bell', 'An Elephant Sitting Still',
 	'Portrait of a Lady on Fire', 'Apollo 11', 'The Souvenir', 'Pain and Glory', 'Parasite'
 ]
-let ratings = [1.1, 1.3, 1.9]
+let ratings = [8.0, 8.6, 8.3]
 
 
 console.log('\nSearch')
@@ -30,7 +30,7 @@ accurateSearch = new AccurateSearch()
 
 //Add data
 for (let i = 0; i < movies.length; i++) {
-	accurateSearch.addText(i, movies[i], ratings[i])
+	accurateSearch.addText(i, movies[i], 100 - 10 * ratings[i])
 }
 
 //Search

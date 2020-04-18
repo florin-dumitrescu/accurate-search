@@ -60,14 +60,14 @@ for (let id of foundIds) console.log(movies[id])
 const AccurateSearch = require('accurate-search')
 
 let movies = ['The Irishman', 'Joker', 'Marriage Story']
-let ratings = [1.1, 1.3, 1.9]
+let ratings = [8.0, 8.6, 8.3]
 
 //Initialize search
 let accurateSearch = new AccurateSearch()
 
 //Add data
 for (let i = 0; i < movies.length; i++) {
-	accurateSearch.addText(i, movies[i], ratings[i])
+	accurateSearch.addText(i, movies[i], 100-10*ratings[i])
 }
 
 //Search
