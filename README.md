@@ -2,7 +2,7 @@
 
 The **fastest** and **most accurate** Javascript full-text search library.
 
-Accurate search uses match distance algorithm to return a precise order of the matching items. Match distance means words matched in the beginning of the text weight more than those matched further in the text. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
+Accurate search uses match distance algorithm to return the accurate order of the matching items. Match distance means words matched in the beginning of the text weight more than those matched further in the text. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
 
 Features:
 - **text search**:
