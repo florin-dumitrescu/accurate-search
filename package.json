@@ -19,7 +19,7 @@
 	"bugs": {
 		"url": "https://github.com/florind9/accurate-search/issues"
 	},
-	"homepage": "http://accuratesearch.org",
+	"homepage": "https://accuratesearch.org",
 	"devDependencies": {
 		"mocha": "^7.0.1"
 	}
