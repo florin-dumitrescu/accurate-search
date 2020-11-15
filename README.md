@@ -2,14 +2,12 @@
 
 The **fastest** and **most accurate** Javascript full-text search library.
 
-Accurate search uses match distance algorithm to return the accurate order of the matching items. Match distance means words matched in the beginning of the text weight more than those matched further in the text. Setting ratings for entries will influence the scoring. No dependencies on other libraries or APIs, so it works offline too.
+Accurate search uses match distance algorithm to return the accurate order of the matching items. Match distance means words matched in the beginning of the text weight more than those matched further in the text. Scoring is influenced by the distance of the match in the text. No dependencies on other libraries or APIs, so it works offline too.
 
 Features:
 - **text search**:
   - the **fastest** and **most accurate** text search
-  - takes ratings into consideration; if an item have rating, it will influence the scoring
-- **ratings** (optional)
-  - if an item have rating defined, this will influence the scoring. The item's score will be multiplied with the rating value
+  - scoring is influenced by the distance of the match in the text
 - **search suggestions**
   - suggest full words starting with the letters entered by the user
 - **realtime indexing** of the content
@@ -131,3 +129,14 @@ let suggestions = accurateSearch.search('a')
 //Show results
 for (let s of suggestions) console.log(s)
 ```
+
+
+
+## Available methods
+
+- addText(id, text, distanceBehind = 0)
+- search(query) - Searches with accurate engine. If there is no match found, searches again with fuzzy engine.
+- accurateSearch(query)
+- fuzzySearch(query)
+- suggestions(query, limit)
+- remove(id)
