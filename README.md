@@ -135,7 +135,7 @@ for (let s of suggestions) console.log(s)
 ## Available methods
 
 - addText(id, text, distanceBehind = 0)
-- search(query) - Searches with accurate engine. If there is no match found, searches again with fuzzy engine.
+- search(query) - Search with accurate engine. If there is no match found, search again with fuzzy engine.
 - accurateSearch(query)
 - fuzzySearch(query)
 - suggestions(query, limit)
