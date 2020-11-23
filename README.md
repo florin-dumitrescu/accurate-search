@@ -8,6 +8,7 @@ Features:
 - **text search**:
   - the **fastest** and **most accurate** text search
   - scoring is influenced by the distance of the match in the text
+	- if there is no accurate match found, it will run a **fuzzy search**
 - **search suggestions**
   - suggest full words starting with the letters entered by the user
 - **realtime indexing** of the content
