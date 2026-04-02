@@ -1,6 +1,6 @@
 {
 	"name": "accurate-search",
-	"version": "1.2.15",
+	"version": "1.2.16",
 	"description": "The fastest and most accurate javascript full-text search library. Accurate search uses match distance algorithm to return the accurate order of the matching items.",
 	"main": "accuratesearch.min.js",
 	"scripts": {
@@ -23,6 +23,10 @@
 	},
 	"homepage": "https://accuratesearch.org",
 	"devDependencies": {
-		"mocha": "^7.0.1"
+		"mocha": "^11.7.5"
+	},
+	"overrides": {
+		"diff": "8.0.4",
+		"serialize-javascript": "7.0.5"
 	}
 }
